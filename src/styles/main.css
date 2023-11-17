@@ -1,0 +1,509 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #3C2A21;
+  }
+  
+  header {
+    min-height: 48px;
+    transition: min-height 0.3s;
+    top: 0;
+    position: fixed;
+    background-color: #fff;
+  }
+  
+  #skip-toContent {  
+    border: none;
+    position: absolute;
+    top: -40px;
+    min-height: 44px;
+    min-width: auto;
+    position: fixed;
+    padding: 10px;
+    left: 10px; 
+    color: #3c2a2161;
+    text-decoration: none;
+    z-index: 1000; 
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-block;
+  }
+  
+  #skip-toContent:hover {
+    text-decoration: underline;
+  }
+  
+  a#skip-toContent {
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  #skip-toContent:focus {
+    top: 0;
+    border: 2px solid blue;
+    color : #3C2A21;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* 
+  HEADER N NAV
+   */
+  
+  .header__inner {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    padding-top: 2px;
+    background-color: #fff;
+  }
+  
+  .header__title {
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 48px;
+    display: inline-block;
+    color: #1A120B;
+    padding-bottom: 10px;
+   
+  }
+  
+  button#menu {
+    min-height: 60px;
+    min-width: auto;
+    border: none;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+  }
+  
+  #menu {
+    font-size: 32px;
+    margin: 10px auto;
+    display: block;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    margin-top: 60px;
+    background-color: white;
+  }
+  
+  .nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    margin-top: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+  }
+  
+  .nav__list {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  
+  .nav a {
+    display: inline-block;
+    padding: 1.3em;
+    text-decoration: none;
+    color: #616161;
+    z-index: 5;
+  
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  .nav a:focus {
+    border : 2px solid blue;
+    outline: none;
+  }
+
+  /* 
+  HERO
+   */
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 500px; 
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    margin-top: 115px;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .hero__inner {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .hero__title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  
+  .hero__tagline {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px;
+  }
+  
+  #explore_btn {
+    background-color: #1A120B; 
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 16px;
+    font-weight: bold; 
+    transition: background-color 0.3s;
+    height: 44px;
+    min-width: 44px;
+  
+  }
+  
+  #explore_btn:hover {
+    background-color: #fff; 
+    color: #1A120B;
+  }
+  
+  button#explore_btn:focus {
+    border : 2px solid blue;
+    outline: none;
+    display: inline-block;
+  }
+  
+  /* 
+  MAIN
+   */
+  #penunjuk {
+    position: absolute;
+    top: 518px;
+    color: transparent;
+    z-index: -2000;
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+  }
+
+  .content {
+    padding: 32px;
+    width: 100%;
+  }
+
+  /* 
+  RESTO LIST
+   */
+   h1.fav{
+    margin-top: 120px;
+  }
+  .list_heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  .star {
+    color: rgba(208, 120, 43, 0.889);
+  }
+  .rating{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .restaurant img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover; 
+  }
+
+  
+  .restaurant {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    margin: 20px; 
+    width: 100%; 
+    height: 100%; 
+  }  
+    
+  #restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: justify;
+
+  }
+  
+  .restaurant:focus {
+    background-color: #d5cea338;
+    border: 20px #1A120B;
+  }
+  
+  p.city {
+    text-align: center;
+    font-size: 14px;
+    color: #1a120b74;
+  }
+  
+  .desc{
+    padding: 5px;
+  }
+  
+  p {
+    padding: 5px;
+    text-align: justify;
+  }
+
+  /* style untuk page detail */
+  /* 
+  RESTO DETAIL
+   */
+  #restaurant-detail {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 5px;
+    text-align: justify;
+    justify-items: center; 
+  }
+  
+  .restaurant-box {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    margin-top: 120px;
+  }
+  
+  .restaurant-box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .restaurant-box p {
+    margin-bottom: 10px;
+    max-width: 100%; 
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .menu-column {
+    flex: 1;
+    width: 200px;
+    right: 20px;
+  }
+  
+  .menu-column ul {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px;
+    margin-top: 5px;
+    height: 100%;
+  }
+  
+  .menu-column h4 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .menu-column ul li {
+    margin-bottom: 5px;
+  }
+
+  /* 
+  CUST REVIEW 
+  */
+  .customer-review-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .customer-review {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    list-style: none;
+  }
+  
+  h3.review_heading {
+    margin-top: 20px;
+  }
+  
+  .customer-review p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  
+  p.r_date {
+    font-size: 8px;
+    color: #616161;
+  }
+  
+  /* 
+  Like button 
+  */
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d04545;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* 
+  ADD REVIEW
+  */
+  .add-review{
+    margin-top: 20px;
+  }
+
+  .add-review h3{
+    text-align: center;
+  }
+  #addReviewForm {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+  }
+
+  label[for="name"] {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input#name {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+
+  label[for="review"] {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  textarea#review {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-width: 44px;
+    min-height: 44px; 
+  }
+
+  button#submitReview {
+    background-color: rgba(157, 104, 58, 0.889);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  button#submitReview:hover {
+    background-color: rgba(78, 52, 29, 0.889);
+  }
+
+  /* 
+  footer 
+  */
+  footer {
+    background-color: #1A120B;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    color: #ffffffad;
+  }
+
+
