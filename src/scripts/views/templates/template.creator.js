@@ -6,7 +6,7 @@ const createRestaurantElement = (restaurant) => `
     <div class="restaurant" tabindex="0">
     <h2 class="restaurant-item_name">${restaurant.name}</h2>
     <p class="city">Kota: ${restaurant.city}</p>
-    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="Gambar ${restaurant.name}">
+    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="Gambar ${restaurant.name}"loading="lazy">
     <p class="rating">${restaurant.rating}<span class="star">★</span></p>
     <p class="desc">${restaurant.description}</p>
     </div>
@@ -16,7 +16,7 @@ const createRestaurantElement = (restaurant) => `
 const createRestaurantDetails = (restaurant) => `
   <div id="restaurant-detail" class="restaurant-box">
     <h2 tabindex="0">${restaurant.restaurant.name}</h2>
-    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.restaurant.pictureId}" alt="${restaurant.restaurant.name}" tabindex="0">
+    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.restaurant.pictureId}" alt="${restaurant.restaurant.name}" tabindex="0" loading="lazy">
     <p tabindex="0">Alamat: ${restaurant.restaurant.address}, ${restaurant.restaurant.city}</p>
     <p tabindex="0">${restaurant.restaurant.description}</p>
 
