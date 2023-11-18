@@ -36,12 +36,14 @@ const MainPages = {
     exploreBtn.addEventListener('click', () => {
       penunjuk.scrollIntoView({ behavior: 'smooth' });
     });
+
+    const restaurantListContainer = document.getElementById('restaurant-list');
     try {
       const restaurant = await DicodingRestaurant.RestaurantList();
 
       if (restaurant && restaurant.restaurants) {
         const restaurantList = restaurant.restaurants;
-        const restaurantListContainer = document.getElementById('restaurant-list');
+        restaurantListContainer.innerHTML = '';
 
         restaurantList.forEach((restaurantItem) => {
           const restaurantItemElement = document.createElement('div');
